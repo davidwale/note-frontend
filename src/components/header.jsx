@@ -13,7 +13,7 @@ function Header() {
     const token = window.localStorage.getItem("token");
 
     try {
-      const response = await axios.get("http://172.20.10.5:4000/userinfo", {
+      const response = await axios.get("https://note-app-api-aooc.onrender.com/userinfo", {
         headers: {
           Authorization: token,
         },

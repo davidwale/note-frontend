@@ -15,7 +15,7 @@ export default function SignUp() {
     if (userType === 'Admin' && secretKey !== 'davmin') {
       alert('Invalid Admin secret');
     } else {
-      fetch('http://172.20.10.5:4000/signup', {
+      fetch('https://note-app-api-aooc.onrender.com/signup', {
         method: 'POST',
         crossDomain: true,
         headers: {

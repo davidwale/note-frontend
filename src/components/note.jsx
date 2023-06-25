@@ -9,7 +9,7 @@ function Note(props) {
     const token = window.localStorage.getItem("token");
 
     axios
-      .delete(`http://172.20.10.5:4000/notes/${String(props.id)}`, {
+      .delete(`https://note-app-api-aooc.onrender.com/notes/${String(props.id)}`, {
         headers: {
           Authorization: token,
         },

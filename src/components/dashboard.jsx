@@ -16,7 +16,7 @@ function Dashboard() {
     const token = window.localStorage.getItem("token");
 
     axios
-      .get("http://172.20.10.5:4000/notes", {
+      .get("https://note-app-api-aooc.onrender.com/notes", {
         headers: {
           Authorization: token,
         },
@@ -37,7 +37,7 @@ function Dashboard() {
     };
 
     axios
-      .post("http://172.20.10.5:4000/notes", newNote, {
+      .post("https://note-app-api-aooc.onrender.com/notes", newNote, {
         headers: {
           Authorization: token,
         },

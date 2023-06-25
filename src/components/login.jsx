@@ -12,7 +12,7 @@ export default class Login extends Component {
     const { email, password } = this.state;
 
     try {
-      const response = await fetch('http://172.20.10.5:4000/', {
+      const response = await fetch('https://note-app-api-aooc.onrender.com/', {
         method: 'POST',
         crossDomain: true,
         headers: {
